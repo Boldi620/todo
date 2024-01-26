@@ -1,104 +1,66 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#062e3f">
+    <meta name="Description" content="A dynamic and aesthetic To-Do List WebApp.">
 
-    <title>Заголовок моей страницы</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One"
-      rel="stylesheet"
-      type="text/css" />
-    <link rel="stylesheet" href="style.css" />
+    <!-- Google Font: Quick Sand -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
 
-    <!-- следующие 3 строки нужны для корректного отображения семантических элементов HTML5 в старых версиях Internet Explorer-->
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
-  </head>
+    <!-- font awesome (https://fontawesome.com) for basic icons; source: https://cdnjs.com/libraries/font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
 
-  <body>
-    <!-- Вот наш главный заголовок, который используется на всех страницах нашего веб-сайта -->
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/corner.css">
+    <title>JUST DO IT</title>
 
-    <header>
-      <h1>Заголовок</h1>
-    </header>
+</head>
 
-    <nav>
-      <ul>
-        <li><a href="#">Домашняя страница</a></li>
-        <li><a href="#">Наша команда</a></li>
-        <li><a href="#">Проекты</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
+<body>
+    <div id = "header">
+        <div class="flexrow-container">
+            <div class="standard-theme theme-selector"></div>
+            <div class="light-theme theme-selector"></div>
+            <div class="darker-theme theme-selector"></div>
+        </div>
+        <h1 id="title">Just do it.<div id="border"></div></h1>
+    </div>
 
-      <!-- Форма поиска — это ещё один распространённый нелинейный способ навигации по веб-сайту. -->
+  <div id="form">
+        <form>
+            <input class="todo-input" type="text" placeholder="Add a task.">
+            <button class="todo-btn" type="submit">I Got This!</button>
+        </form>
+    </div>
 
-      <form>
-        <input type="search" name="q" placeholder="Search query" />
-        <input type="submit" value="Go!" />
-      </form>
-    </nav>
+    <!-- div for top left corner -->
+        <div class="version">
+                         <div class="demo version-section"><a href="https://github.com/lordwill1/todo-list" class="github-corner">
+                             <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1);">
+                               <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+                               <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+                               <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+                             </svg></a>
+                           </div>
+    <div>
+        <p><span id="datetime"></span></p>
+        <script src="JS/time.js"></script>
+    </div>
 
-    <!-- Здесь основное содержимое нашей страницы -->
-    <main>
-      <!-- Она содержит статью -->
-      <article>
-        <h2>Заголовок статьи</h2>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam
-          lectus.
-        </p>
-
-        <h3>Подраздел</h3>
-
-        <p>
-          Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum
-          dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem.
-          Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.
-        </p>
-
-        <p>
-          Pelientesque auctor nisi id magna consequat sagittis. Curabitur
-          dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet.
-          Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.
-        </p>
-
-        <h3>Ещё один подраздел</h3>
-
-        <p>
-          Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum
-          soclis natoque penatibus et manis dis parturient montes, nascetur
-          ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem
-          facilisis semper ac in est.
-        </p>
-
-        <p>
-          Vivamus fermentum semper porta. Nunc diam velit, adipscing ut
-          tristique vitae sagittis vel odio. Maecenas convallis ullamcorper
-          ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi
-          diam iaculis velit, is fringille sem nunc vet mi.
-        </p>
-      </article>
-
-      <!-- Дополнительный контент также может быть вложен в основной контент -->
-      <aside>
-        <h2>Связанные темы</h2>
-
-        <ul>
-          <li><a href="#">Мне нравится стоять рядом с берегом моря</a></li>
-          <li><a href="#">>Мне нравится стоять рядом с морем</a></li>
-          <li><a href="#">Даже на севере Англии</a></li>
-          <li><a href="#">Здесь не перестаёт дождь</a></li>
-          <li><a href="#">Лаааадно...</a></li>
+  <div id="myUnOrdList">
+        <ul class="todo-list">
+            <!-- (Basic Format)
+            <div class="todo">
+                items added to this list:
+                <li></li>
+                <button>delete</button>
+                <button>check</button>
+            </div> -->
         </ul>
-      </aside>
-    </main>
-
-    <!-- И вот наш главный нижний колонтитул, который используется на всех страницах нашего веб-сайта -->
-
-    <footer>
-      <p>©Авторские права никому не принадлежат, 2050. Все права защищены.</p>
-    </footer>
-  </body>
+    </div>
+    <script src="JS/main.js" type="text/javascript"> </script>
+</body>
 </html>
