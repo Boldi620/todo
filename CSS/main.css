@@ -1,3 +1,46 @@
-body{
+* {
   font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(255, 255, 255);
+  /*max-width: 1200px;*/
+}
+.header { 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: #fa0101; /*It's a color so you can see the borders of the menu*/
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 32px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-style: 18px;
+  color: #ffffff;
+  font-weight: 400;
+  margin-left: 35px;
+  transition: .3s;
+}
+
+.navbar a:hover{
+  color: #00f5cc;
+  background-color: #a13939;
+  padding: 7px 15px;
+  border-radius: 5px;
 }
