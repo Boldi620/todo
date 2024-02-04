@@ -12,8 +12,8 @@ body {
 
 .fit {
   display: flex;
-  justify-content: start;
-  justify-items: start;
+  justify-content: center;
+  justify-items: center;
   align-content: center;
   align-items: center;
   width: 100%;
@@ -27,7 +27,6 @@ body {
   position: sticky;
   top: 0;
   left: 0;
-  width: 100%;
   padding: 20px 100px;
   background: #000000;
   display: flex;
