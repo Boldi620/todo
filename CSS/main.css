@@ -1,18 +1,24 @@
 * {
   font-family: 'Ubuntu', sans-serif;
   margin: 0;
-  padding: 0px 100px;
   box-sizing: border-box;
 }
 
 body {
   color: rgb(0, 0, 0);
+  max-width: 1703px;
+  margin: 0px auto;
 }
 
-.container {
-  max-width: none;
-  margin: 0 auto;
-  padding: 0 100px;
+.fit {
+  display: flex;
+  justify-content: start;
+  justify-items: start;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 80em;
+  margin: auto;
 }
 
 .main {
@@ -24,8 +30,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 0%;
-  background: #fa0101; /*It's a color so you can see the borders of the menu*/
+  padding: 20px 100px;
+  background: #000000; /*It's a color so you can see the borders of the menu*/
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -63,4 +69,9 @@ body {
 
 .icon{
   margin-left: auto;
+}
+
+.dark_img{
+  width: 24px;
+  height: 24px;
 }
