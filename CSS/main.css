@@ -1,24 +1,25 @@
 * {
   font-family: 'Ubuntu', sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 0px 100px;
   box-sizing: border-box;
 }
 
 body {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 .header { 
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 2em;
+  padding: 20px 0%;
   background: #fa0101; /*It's a color so you can see the borders of the menu*/
   display: flex;
   justify-content: space-around;
   align-items: center;
   z-index: 100;
+
 }
 
 .logo {
@@ -27,6 +28,11 @@ body {
   text-decoration: none;
   font-weight: 700;
   margin-right: auto;
+}
+
+.navbar{
+  margin: auto;
+  position: absolute;
 }
 
 .navbar a {
@@ -45,12 +51,6 @@ body {
   background-color: #a13939;
 }
 
-.fit {
-  display: flex; 
-  justify-content: center; 
-  justify-items: center; 
-  align-content: center; 
-  align-items: center; 
-  width: 100%; 
-  max-width: 80em;
+.icon{
+  margin-left: auto;
 }
