@@ -34,6 +34,8 @@ body {
   align-items: center;
   z-index: 100;
   margin: 20px;
+  margin-top: 10px;
+  border-radius: 50px;
 }
 
 .logo {
@@ -47,6 +49,8 @@ body {
 .navbar{
   margin: auto;
   position: absolute;
+  background: #ff0000;
+
 }
 
 .navbar a {
