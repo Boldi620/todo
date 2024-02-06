@@ -5,9 +5,10 @@
 }
 
 body {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   max-width: 1703px;
   margin: 0px auto;
+  background-color: #000000;
 }
 
 .fit {
@@ -28,7 +29,7 @@ body {
   top: 0;
   left: 0;
   padding: 20px 100px;
-  background: #000000;
+  /*background: #0f0f0f;*/
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -49,31 +50,53 @@ body {
 .navbar{
   margin: auto;
   position: absolute;
-  background: #ff0000;
-
+  background: #00033a;
+  border: 2px solid #ffffff;
+  border-radius: 70px;
+  padding: 5px;
+  gap: 5px;
+  display: flex;
 }
 
 .navbar a {
   text-decoration: none;
-  font-style: 18px;
+  font-size: 16px;
   color: #ffffff;
   font-weight: 400;
-  margin-left: 15px;
   transition: .3s;
-  padding: 7px 15px;
-  border-radius: 5px;
+  padding: 7px;
+  border-radius: 40px;
 }
 
 .navbar a:hover{
-  color: #00f5cc;
-  background-color: #a13939;
+  color: #000000;
+  background-color: #ffffff;
 }
 
-.icon{
+.h1_global{
+  font-size: 86px;
+  margin-top: 160px;
+  flex-direction: column;
+  display: flex;
+
+}
+
+.text{
+
+}
+
+.text_global{
+
+  
+
+}
+
+.test{
+  text-align: center;
+  padding: 3px 10px;
+  font-size: 16px;
   margin-left: auto;
-}
-
-.dark_img{
-  width: 24px;
-  height: 24px;
+  margin-right: auto;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
 }
