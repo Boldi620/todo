@@ -22,8 +22,6 @@ body {
   margin: auto;
 }
 
-
-
 .header { 
   position: sticky;
   top: 0;
@@ -37,6 +35,7 @@ body {
   margin: 20px;
   margin-top: 10px;
   border-radius: 50px;
+  
 }
 
 .logo {
@@ -73,21 +72,28 @@ body {
   background-color: #ffffff;
 }
 
+.btn{
+  padding: 10px 15px;
+  border: 2px solid #ffffff;
+  border-radius: 70px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  transition: .2s;
+}
+
+.btn:hover{
+  background-color: #fff;
+  color: #000000;
+
+}
+
 .h1_global{
   font-size: 86px;
   margin-top: 160px;
   flex-direction: column;
   display: flex;
-
-}
-
-.text{
-
-}
-
-.text_global{
-
-  
 
 }
 
@@ -100,3 +106,15 @@ body {
   border: 2px solid #ffffff;
   border-radius: 20px;
 }
+
+#text{
+  height: 86px;
+}
+
+.start_test{
+  display: flex;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
